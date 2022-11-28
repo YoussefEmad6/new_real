@@ -9,9 +9,7 @@ import SearchFilters from "../components/SearchFilters";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 import noresult from "../assets/images/noresult.svg";
 
-import React from "react";
-
-const search = ({ properties }) => {
+const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
   return (
@@ -48,7 +46,7 @@ const search = ({ properties }) => {
           marginTop="5"
           marginBottom="5"
         >
-          <Image src={noresult} />
+          <Image src={noresult} alt="image" />
           <Text fontSize="xl" marginTop="3">
             No Result Found.
           </Text>
